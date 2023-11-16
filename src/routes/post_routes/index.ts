@@ -3,13 +3,13 @@ import { PostController } from '../../controllers/post.controller';
 
 enum FeedR {
   GETFEED = '/v1/feed/get',
-  POSTFEED = '/v1/feed/post',
+  POSTFEED = '/v1/feed/create',
   GETFEEDDETAIL = '/v1/feed/detail/:id',
   UPDATEFEED = '/v1/feed/update/:id',
   DELETEFEED = '/v1/feed/delete/:id',
 }
 
-export default function AuthRoutes(
+export default function feedRoutes(
   app: Express,
   postController: PostController
 ) {
